@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+button,
+div,
+form,
+input {
+  margin: 10px;
+}
+
+h1 {
+  color: #4aaaa5;
+}
+.animal-btn {
+  background-color: #4aaaa5;
+  color: white;
+}
+#animal-form{
+  color: #4aaaa5;
+  display: inline-block;
+}
+#animals-view{
+  color: #4aaaa5;
+  display: inline-block;
+}
