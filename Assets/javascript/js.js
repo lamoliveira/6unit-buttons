@@ -42,7 +42,7 @@ function displayAnimalInfo(thebutton) {
         console.log("Poster:" + results[i].images.fixed_height_small_still.url);
         if (results[i].images.fixed_height_small_still.url) {
           if (results[i].images.fixed_height_small_still.url != "N/A") {
-            var animalFig = $("<div1><p>Rating: " + results[i].rating + "</p>");
+            var animalFig = $("<div class='div1'><p>Rating: " + results[i].rating + "</p>");
             // Creating and storing an image tag
             var animalImage = $("<img>");
             // Setting the src attribute of the image to a property pulled off the result item
@@ -109,10 +109,10 @@ function displayMovieInfo(thebutton) {
       for (var i = 0; i < results.length; i++) {
         console.log("for:" + i);
         // Creating and storing a div tag
-        console.log("Poster:" + results[i].Poster)
+        console.log("Posterx:" + results[i].Poster)
         if (results[i].Poster) {
           if (results[i].Poster != "N/A") {
-            var animalFig = $("<div1>");
+            var animalFig = $("<div class='div1'>");
             var movieyear = $("<p>").text(results[i].Type + " - Year: " + results[i].Year );
             animalFig.append(movieyear);
             // Creating and storing an image tag
@@ -131,7 +131,7 @@ function displayMovieInfo(thebutton) {
             console.log(animalFig);
             //animalDiv.append(p);
 
-            animalImage.addClass("image");
+            //animalImage.addClass("image");
             // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
 
             $("#movies-view").append(animalFig);

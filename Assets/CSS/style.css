@@ -9,7 +9,7 @@ form,
 input {
   margin: 10px;
 }
-div1 {
+.div1 {
 	float: left;
   margin: 5px;
   font-size: 10px;
@@ -28,8 +28,10 @@ h1 {
 }
 #animals-view{
   color: #4aaaa5;
+  display: inline-block;
 
 }
 .img-fluid{
-  width: 110px;
+ 
+  height: 200px;
 }
